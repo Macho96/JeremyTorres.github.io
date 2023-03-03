@@ -8,11 +8,14 @@ ABOUTTEXT=$("#aboutText");
 CONTACT=$("#cont");
 CONTACTBTN=$("#contactbtn");
 TCONTACT=$("#tContactM");
+MSGCONTACT=$("#msgContact");
 PNAME=$("#pName");
 PSUB=$("#pSub");
 PMSG=$("#pMsg");
 BTNSEND=$("#btnSend");
 TCONTACT=$("#tContactM");
+CTADDRESS=$("#ctAddress");
+CTPHONE=$("#ctPhone");
 SKILLS=$("#sk");
 TSKILLS=$("#tSkill");
 TFRAMEWORK=$("#tFramework");
@@ -59,9 +62,12 @@ function loadLenguaje(language){
     CONTACT.text(language["contact"]);
     TCONTACT.text(language["contact"]);
     CONTACTBTN.text(language["contact"]);
-    PNAME.text(language["pName"]);
-    PSUB.text(language["pSub"]);
-    PMSG.text(language["pMsg"]);
+    CTADDRESS.text(language["address"]);
+    CTPHONE.text(language["phone"]);
+    MSGCONTACT.text(language["msgCon"]);
+    PNAME.attr("placeholder",language["pName"]);
+    PSUB.attr("placeholder",language["pSub"]);
+    PMSG.attr("placeholder",language["pMsg"]);
     BTNSEND.text(language["btnSend"]);
     SKILLS.text(language["skills"]);
     TSKILLS.text(language["skills"]);
@@ -103,10 +109,10 @@ LANG.change(function() {
 function downloadCV(){
   if(_lang=="es-ES"){
     //open new tab cv
-    alert("download spanish")
+    window.open('/images/CV JEREMY TORRES.pdf', '_blank');
   }else{
     //open new tab cv
-    alert("download english")
+    window.open('/images/CV JEREMY TORRES.pdf', '_blank');
   }
 }
 
