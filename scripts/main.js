@@ -72,8 +72,10 @@ LANG.change(function() {
 function downloadCV(){
   if(_lang=="es-ES"){
     //open new tab cv
+    alert("download spanish")
   }else{
     //open new tab cv
+    alert("download english")
   }
 }
 
